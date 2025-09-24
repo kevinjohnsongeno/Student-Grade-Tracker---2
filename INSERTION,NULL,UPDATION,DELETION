@@ -1,0 +1,42 @@
+USE gradetracker;
+INSERT INTO students(student_name, batch, username) VALUES ("Kevin Johnson Geno", "E", "kevin@CSE");
+INSERT INTO students(student_name, batch, username) VALUES ("Albin Johnson Geno", "F", "albin@ECE");
+INSERT INTO students(student_name, batch, username) VALUES ("Brave Johnson Jisha", "G", "brave@MECH");
+INSERT INTO students(student_name, batch, username) VALUES ("Aravind P", NULL, "aravind@MECH");
+INSERT INTO students(student_name, batch, username) VALUES ("Anirudh S", DEFAULT, "anirudh@IT");
+
+INSERT INTO subjectdetails(subject_code, subject_name, credits) VALUES ("PCCST101", "Discrete Mathematics", 3);
+INSERT INTO subjectdetails(subject_code, subject_name, credits) VALUES ("GAMAT102", "Mathematics - 1", 2);
+INSERT INTO subjectdetails(subject_code, subject_name, credits) VALUES ("UCHST101", "Economics", 1);
+
+INSERT INTO studentlogin(student_id, password) VALUES (1, 'kevin123');
+INSERT INTO studentlogin(student_id, password) VALUES (2, 'albin123');
+INSERT INTO studentlogin(student_id, password) VALUES (3, 'brave123');
+
+INSERT INTO adminlogin(username, password) VALUES ("admin1" , 'adminabcd');
+INSERT INTO adminlogin(username, password) VALUES ("admin2" , 'admin123');
+INSERT INTO adminlogin(username, password) VALUES ("admin3" , 'adminxyz');
+
+INSERT INTO student_marks(student_id, subject_code, internal, laborproject, totalmarks, grade, grade_points) VALUES (1, "PCCST101", 19, 18, 88, 'B', 8);
+INSERT INTO student_marks(student_id, subject_code, internal, laborproject, totalmarks, grade, grade_points) VALUES (2, "GAMAT102", 20, 10, 90, 'A', 9);
+INSERT INTO student_marks(student_id, subject_code, internal, laborproject, totalmarks, grade, grade_points) VALUES (3, "UCHST101", 20, 19, 95, 'A', 10);
+
+UPDATE students 
+SET username = "albin@cse"
+WHERE student_id = 2;
+
+UPDATE subjectdetails
+SET credits = 6
+WHERE subject_code = "PCCST101";
+
+DELETE 
+FROM students
+WHERE student_id = 5;
+
+DELETE 
+FROM student_marks
+WHERE student_id = 2;
+
+DELETE 
+FROM adminlogin
+WHERE admin_id = 1;
