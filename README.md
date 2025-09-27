@@ -13,7 +13,7 @@ This README outlines how to initialize the database and describes the purpose of
 
 ##  Database: `gradetracker`
 
-```sql
+sql
 USE gradetracker;
 ##  SQL Commands Used in This Project
 
