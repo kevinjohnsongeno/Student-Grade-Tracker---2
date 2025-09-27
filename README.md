@@ -23,40 +23,21 @@ This project makes use of several fundamental SQL commands that enable interacti
 ### 1. `USE`
 
 - **Purpose:** Selects the database to perform subsequent operations.
-- **Example:**
-    ```sql
-    USE gradetracker;
-    ```
+- **Used for:** Using schema for further querying and other operations.
 
 ### 2. `INSERT INTO`
 
 - **Purpose:** Adds new rows (records) to a table.
-- **Example:** Inserting student records:
-    ```sql
-    INSERT INTO students(student_name, batch, username) 
-    VALUES ("Kevin Johnson Geno", "E", "kevin@CSE");
-    ```
 - **Used for:** Populating `students`, `subjectdetails`, `studentlogin`, `adminlogin`, and `student_marks` tables.
 
 ### 3. `UPDATE`
 
 - **Purpose:** Modifies existing data in a table.
-- **Example:** Updating a student's username:
-    ```sql
-    UPDATE students 
-    SET username = "albin@cse"
-    WHERE student_id = 2;
-    ```
 - **Used for:** Correcting or changing records such as usernames and subject credits.
 
 ### 4. `DELETE`
 
 - **Purpose:** Removes records from a table.
-- **Example:** Deleting a student record:
-    ```sql
-    DELETE FROM students
-    WHERE student_id = 5;
-    ```
 - **Used for:** Removing student records, their marks, or admin accounts as needed.
 
 ---
