@@ -13,8 +13,9 @@ This README outlines how to initialize the database and describes the purpose of
 
 ##  Database: `gradetracker`
 
-sql
+```sql
 USE gradetracker;
+```
 ##  SQL Commands Used in This Project
 
 This project makes use of several fundamental SQL commands that enable interaction with the database. Below is an overview of each command with explanations and relevant examples from the GradeTracker project:
