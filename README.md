@@ -1,6 +1,6 @@
-#  GradeTracker Database
+#  Grade Tracker Database
 
-**GradeTracker** is a basic academic tracking system designed to store and manage:
+**Grade Tracker** is a basic academic tracking system designed to store and manage:
 
 - Student records
 - Subject details
